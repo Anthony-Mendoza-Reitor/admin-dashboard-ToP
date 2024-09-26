@@ -1,24 +1,170 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    
+}
 svg{
     width: 20px;
     height: 20px;
 }
+img{
+    width: 40px;
+    height: 40px;
+}
+input {
+    width: 400px;
+    border-radius: 200PX;
+}
 .container{
     display: grid;
     grid-template-columns: repeat(1, 0.25fr) repeat(1, 1fr);
-    grid-template-rows: repeat(1, 0.2fr) repeat(1, 1fr);
+    grid-template-rows: repeat(1, 0.01fr) repeat(1, 0.01fr);
 }
 .dashboard{
-    background-color: rgb(0, 102, 255);
-    display: grid;
-    grid-row: 0.20 / 1;
-    grid-column: 0.25 / 1;
+    background-color: rgb(97, 163, 71);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    font-size: 44px;
+    color: brown;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-right-style:solid;
+    border-color: black;
+}
+.dashboard > * svg {
+    height: 50px;
+    width: 50px;
+}
+#dashTitle{
+    margin: 0px;
+    border-bottom-style:double;
+    border-color: black;
+}
+.bucket{
+    padding: 4px;
+    align-items: center;
+}
+.bucket > * svg{
+    height: 40px;
+    width: 40px;
+}
+.dashList1 > *{
+    display: flex;
+}
+.dashList2 > *{
+    display: flex;
 }
 .rightSide{
-    background-color: brown;
+    background-color: rgba(236, 173, 173, 0);
 }
 .rightUpper{
-    background-color: purple;
+    background-color: rgb(154, 236, 124);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 150px;
+}
+.rightUpperAbove{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.rightUpperDown{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 16px;
+   padding-right: 16px;
+}
+#salute{
+    font-size: 12px;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+}
+.saluteUsername{
+    margin-left: 12px;
+}
+button{
+    border-radius: 200px;
+    background-color: rgb(97, 163, 71);
+    color: white;
+    font-size: 14px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-shadow: 1px 1px black;
 }
 .rightLower{
-    background-color: tomato;
+    background-color: rgb(219, 186, 180);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    border-top-style: groove;
+    border-color: brown;
+}
+.projects{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 0.8fr);
+    grid-template-rows: repeat(3, 0.8fr);
+    gap: 15px;
+}
+.projects > *{
+    background-color: rgb(247, 236, 236);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 12px;
+}
+.text > h{
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.announcements{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: rgb(247, 236, 236);
+    border-radius: 20px;
+    margin: 12px;
+    padding: 8px;
+}
+.announcements > *{
+    display: flex;
+    flex-direction: column;
+    border-top: 5px;
+    border-top-style: ridge;
+    padding-top: 4px ;
+}
+.announText > h{
+    font-weight: bold;
+}
+.trending{
+    background-color: rgb(247, 236, 236);
+    border-radius: 20px;
+    margin: 12px;
+    padding: 8px;
+}
+.trending > *{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 8px;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr;
+    grid-template-rows: repeat(4, 0.001fr);
+    justify-content: space-evenly;
 }
