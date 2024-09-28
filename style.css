@@ -2,7 +2,8 @@ body{
     background-color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
-    
+    position: relative;
+    top: 20px;
 }
 svg{
     width: 20px;
@@ -13,9 +14,10 @@ img{
     height: 40px;
 }
 input {
-    width: 400px;
+    width:50dvw;
     height: 20px;
-    border-radius: 200PX;
+    border-radius: 200px;
+    margin-left: 12px;
 }
 .container{
     display: grid;
@@ -39,22 +41,26 @@ input {
 }
 #dashTitle{
     margin: 0px;
-    border-bottom-style:double;
-    border-color: black;
+    margin-left: 12px;
 }
 .bucket{
-    padding: 4px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
 .bucket > * svg{
     height: 40px;
     width: 40px;
 }
-.dashList1 > *{
+.dashboardTitle{
     display: flex;
 }
-.dashList2 > *{
+.dashList1 > *, .dashList2 > *{
     display: flex;
+    margin-top: 40px;
+}
+.dashList1 > div > item, .dashList2 > div > item{
+    margin-left: 12px;
 }
 .rightSide{
     background-color: rgba(236, 173, 173, 0);
@@ -72,6 +78,16 @@ input {
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
+}
+.searchLogoButton, .userLogoName{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.userLogoName>*{
+    padding-left: 12px;
 }
 .rightUpperDown{
    display: flex;
@@ -109,7 +125,7 @@ button{
     background-color: rgb(219, 186, 180);
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.5fr);
     border-top-style: groove;
     border-color: brown;
 }
@@ -117,20 +133,43 @@ button{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-columns: repeat(2, 0.8fr);
-    grid-template-rows: repeat(3, 0.6fr);
-    gap: 15px;
+    grid-template-columns: repeat(2, 0.6fr);
+    grid-template-rows: repeat(3, 0.3fr);
 }
 .projects > *{
     background-color: rgb(247, 236, 236);
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 16px;
-    margin: 12px;
+    margin: 4px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+#Test{
+    position: absolute;
+    top: 96px;
+    left: 385px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: rgba(151, 151, 146, 0.247);
+    padding: 0px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .text > h{
     font-weight: bold;
+    font-size: 35px;
+}
+.text > p{
+    font-size: 20px;
+    margin: 10px;
 }
 .icons{
     display: flex;
@@ -144,6 +183,19 @@ button{
     border-radius: 20px;
     margin: 12px;
     padding: 8px;
+    margin-top: 25px;
+}
+#Test2{
+    position: absolute;
+    top: 120px;
+    right: 110px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: rgba(151, 151, 146, 0.247);
+    padding: 0px;
+    border-style: none;
 }
 .announcements > *{
     display: flex;
@@ -160,15 +212,29 @@ button{
     border-radius: 20px;
     margin: 12px;
     padding: 8px;
+    height: max-content;
 }
 .trending > *{
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-top: 12px;
+    margin-top: 18px;
     margin-left: 12px;
     margin-right: 8px;
     display: grid;
     grid-template-columns: 0.25fr 0.5fr;
     grid-template-rows: repeat(4, 0.001fr);
     justify-content: space-evenly;
+}
+#Test3{
+    position: absolute;
+    bottom: 354px;
+    right: 146px;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    background-color: rgba(151, 151, 146, 0.247);
+    padding: 0px;
+    border-radius: 250px;
+    border-style: none;
 }
